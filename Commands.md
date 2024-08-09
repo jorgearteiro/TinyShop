@@ -1,4 +1,4 @@
 dotnet run --publisher manifest --output-path aspire-manifest.json
 
-azd initi
+azd init
 azd infra synth

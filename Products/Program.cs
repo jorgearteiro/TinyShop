@@ -5,16 +5,20 @@ using Products.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.AddServiceDefaults();
+builder.AddRedisOutputCache("cache");
 
 // Add services to the container.
 builder.Services.AddSingleton<RandomFailureMiddleware>();
 
 
 builder.Services.AddDbContext<ProductDataContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("ProductsContext") ?? throw new InvalidOperationException("Connection string 'ProductsContext' not found.")));
+    options.UseInMemoryDatabase("inmemproducts"));
 
 // Add services to the container.
 var app = builder.Build();
+app.UseOutputCache();
+app.MapDefaultEndpoints();
 
 // Configure the HTTP request pipeline.
 app.UseHttpsRedirection();
