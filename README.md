@@ -1,1 +1,1 @@
-# eShopLite
+# TinyShop

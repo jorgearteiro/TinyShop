@@ -15,9 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopLite.AppHost", "eShopLite.AppHost\eShopLite.AppHost.csproj", "{4AD00990-76AF-4171-83CC-45770EBF18C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyShop.AppHost", "TinyShop.AppHost\TinyShop.AppHost.csproj", "{4AD00990-76AF-4171-83CC-45770EBF18C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopLite.ServiceDefaults", "eShopLite.ServiceDefaults\eShopLite.ServiceDefaults.csproj", "{0E166620-CC4F-4930-B3CC-63173089BFCB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyShop.ServiceDefaults", "TinyShop.ServiceDefaults\TinyShop.ServiceDefaults.csproj", "{0E166620-CC4F-4930-B3CC-63173089BFCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
