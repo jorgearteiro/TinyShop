@@ -19,6 +19,9 @@ spec:
       containers:
         - name: tinyshop
           image: arteiroacr.azurecr.io/store:latest
+          env:
+          - name: ProductEndpoint
+            value: "http://products"          
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
