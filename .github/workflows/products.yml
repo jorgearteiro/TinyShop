@@ -48,7 +48,7 @@ env:
     manifests/serviceproducts.yaml
   DOCKER_FILE: ./Products/Dockerfile
   BUILD_CONTEXT_PATH: ./
-  NAMESPACE: tinyshopproducts
+  NAMESPACE: tinyshop
 
 jobs:
   buildImage:
