@@ -44,8 +44,8 @@ env:
   CLUSTER_RESOURCE_GROUP: joarteir-aks-auto
   CLUSTER_NAME: aks-auto
   DEPLOYMENT_MANIFEST_PATH: |
-    manifests/deployment.yaml
-    manifests/service.yaml
+    manifests/deployment-products.yaml
+    manifests/serviceproducts.yaml
   DOCKER_FILE: ./Products/Dockerfile
   BUILD_CONTEXT_PATH: ./
   NAMESPACE: tinyshopproducts
