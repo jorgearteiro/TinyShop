@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: tinyshop
+  namespace: tinyshop
+  labels:
+    kubernetes.azure.com/generator: devhub
+spec:
+  type: LoadBalancer
+  selector:
+    app: tinyshop
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
