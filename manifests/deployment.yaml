@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tinyshop
+  labels:
+    app: tinyshop
+    kubernetes.azure.com/generator: devhub
+  namespace: tinyshop
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tinyshop
+  template:
+    metadata:
+      labels:
+        app: tinyshop
+    spec:
+      containers:
+        - name: tinyshop
+          image: arteiroacr.azurecr.io/store:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
