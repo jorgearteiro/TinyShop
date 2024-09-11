@@ -2,11 +2,11 @@ apiVersion: v1
 kind: Service
 metadata:
   name: products
-  namespace: tinyshopproducts
+  namespace: tinyshop
   labels:
     kubernetes.azure.com/generator: devhub
 spec:
-  type: LoadBalancer
+  type: ClientIP
   selector:
     app: products
   ports:
